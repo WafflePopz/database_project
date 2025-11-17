@@ -17,12 +17,12 @@ The project is considered successful when users can successfully:
 
 The project demonstrates the successful integration of a Full Stack composed of four distinct technologies:
 
-|Layer|Technology|Purpose|
-|---|---|---|---|
-|Database (DB)|SQLite|To efficiently store the spatio-temporal data.|
-|Data Layer / ORM|Peewee|"Used to define models, establish the database connection, and perform all data access."|
-|Data Processing|Pandas / Python|"Data engineering, cleaning, and implementing the ETL process."|
-|Presentation Layer|Streamlit|"To build the dynamic, interactive web application and visualizations."|
+| Layer | Technology | Purpose |
+| --- | --- | --- |
+| Database (DB) | SQLite | To efficiently store the spatio-temporal data. |
+| Data Layer / ORM | Peewee | "Used to define models, establish the database connection, and perform all data access." |
+| Data Processing | Pandas / Python | "Data engineering, cleaning, and implementing the ETL process." |
+|Presentation Layer |Streamlit | "To build the dynamic, interactive web application and visualizations." |
 
 💡 Technical Interest & Novelty
 - **Full Stack Demonstration:** Successfully integrates SQLite, Peewee, Pandas, and Streamlit.
