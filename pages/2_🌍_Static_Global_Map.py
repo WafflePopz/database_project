@@ -17,11 +17,10 @@ def load_data():
     data = pd.read_csv(DATA_PATH)
     return data
 
-data_load_state = st.text('Loading data...')
+with st.spinner('Loading data...'):
+    data = load_data()
 
-data = load_data()
-
-data_load_state.text("Data Loaded.")
+st.sidebar.success("✅ Data Loaded.")
 
 # plot configure
 offset = 20
