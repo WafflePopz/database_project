@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import seaborn as sns
 
 st.set_page_config(page_title="Healthcare Capacity", page_icon="📊")
 
@@ -34,3 +35,12 @@ region_mapping = {
 }
 data["region_name"] = data["region"].map(region_mapping)
 all_regions = list(region_mapping.values())
+
+target_column = "measles_incidence_rate_per_1000000_total_population"
+
+top_countries = (
+    data.groupby("country")
+    .median().sort_values(ascending=False)
+    .head().index
+    )
+
